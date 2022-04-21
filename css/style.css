@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+html,body{
+    height: 100%;
+}
+
+
+/**Divs Gerais**/
+.container{
+    width: 100%;
+    margin: 0 auto;    
+}
+
+.clear{
+    clear:both;
+}
+
+/******/
+
+header{
+    background-color: rgb(180, 180, 180);
+    padding: 10px 2% 40px 2%;
+}
+
+.logo1{
+    color: white;/*tirar depois*/
+    text-align: center; /*tirar depois*/
+    padding: 30px;
+    float: left;
+    width: 160px;
+    height: 70px;
+    background-color: purple;/*COLOCAR IMAGEM DEPOIS*/
+    /*BACKGROUND-IMAGE: URL('../IMAGENS/LOGO1.PNG')*/
+}
+
+.logo2{
+    color: white;/*tirar depois*/
+    text-align: center;/*tirar depois*/
+    padding: 30px;
+    float: right;
+    width: 160px;
+    height: 70px;
+    background-color: green; /**COLOCAR IMAGEM DEPOIS*/
+    /*BACKGROUND-IMAGE: URL('../IMAGENS/LOGO2.PNG')*/
+}
+
+.cover-form{
+    width: 100%;
+}
+
+.bg{
+    background-position: center;
+    height: 620px;
+    background-image: url('../imagens/bg-form.jpg');
+    background-size: cover;
+}
+
+.form-container{
+    float: right;
+    width: 400px;
+    height: 107%;
+    position: relative;
+    top: -3%;
+    left: -10%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 5px 3px rgb(39, 38, 38);
+    border-radius: 5px;
+}
+
+.form-container h2{
+    font-weight: normal;
+    padding: 25px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(210,210,210);
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 30px 25px;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 30px;
+}
+
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 50px;
+    line-height: 45px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form-container form input[type=submit]{
+    cursor: pointer;
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container form textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 100px;
+    line-height: 45px;
+    padding-left: 10px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+.chamada{
+    height: 190px;
+    padding: 50px 50px;
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+    
+}
+
+.chamada h2{
+    width: 98%;
+    display:inline-block;
+    color: rgb(41, 40, 40);
+    font-size:24px;
+    font-weight: normal;
+}
+.chamada p{
+    margin-top: 20px;
+    width: 98%;
+    display:inline-block;
+    color: rgb(41, 40, 40);
+    font-size:20px;
+    font-weight: normal;
+}
+
+.arrow{
+    background-repeat: no-repeat;
+    position: relative;
+    top: 20%;
+    width: 65px;
+    height: 65px;
+    background-image: url('../imagens/arrow.png');
+    left: 50%;
+    margin-left: -20px;
+}
+
+.flex-mosaico{
+    border: 1px solid white;
+    display: flex;
+}
+
+.item1-mosaico{
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item2-mosaico{
+    background-color: rgb(210,210,210);
+    padding:60px 40px;
+    width: 40%;
+}
+
+.item2-mosaico p{
+    margin-top: 10%;
+}
+
+
+footer{
+    text-align: center; 
+    padding: 20px 0;
+}
+
+.img{
+    margin: 0 auto;
+    width: 120px;
+    height: 70px;
+    background-color: purple;
+}
+
+.img p{
+    margin: 0 auto;
+    padding: 23px;
+}
+
+
+
+
+
+@media screen and (max-width: 960px){
+    .bg{
+        text-align: center;
+    }
+
+    .form-container{
+        width: 96%;
+        max-width: 400px;
+        display: inline-block;
+    }
+       
+}
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block;
+    }
+    .item1-mosaico{ 
+        border-bottom:1px solid white;
+        height: 400px;
+        width: 100%;
+    }
+    
+    .item2-mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 645px){
+
+    .arrow{
+        position: sticky;
+        left: 45%;
+    }
+    
+}
+
+@media screen and (max-width: 510px){
+    
+    header{
+        text-align: center;
+    }
+    
+    
+    .logo1,.logo2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+        }
+        
+}
